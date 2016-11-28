@@ -26,6 +26,7 @@
 ///    all copies or substantial portions of the Software.
 ///
 
+#ifndef SKIP_BENCHMARK
 // Compiler-check
 #ifdef _MSC_VER
 // if we're not compiling with VS2010 (or less)
@@ -38,6 +39,7 @@
 // let's do a proper benchmark
 #		define DO_PROPER_BENCHMARK
 #endif // _MSC_VER
+#endif // SKIP_BENCHMARK
 
 #include <iostream>
 #include <cstdlib>
